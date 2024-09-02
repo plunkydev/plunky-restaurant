@@ -1,6 +1,9 @@
 import "./styles.css";
+import home from "./home.js"
 
-/* const content = document.getElementById("content");
-content.appendChild(); */
+const homeButton = document.getElementById("homeButton");
+const menuButton = document.getElementById("menuButton");
+const usButton = document.getElementById("usButton");
+const content = document.getElementById("content");
 
-console.log("Hola mundo");
+homeButton.addEventListener("click", home);
