@@ -1,5 +1,6 @@
 import "./styles.css";
-import { greeting } from "./greeting";
 
+/* const content = document.getElementById("content");
+content.appendChild(); */
 
-console.log(greeting);
+console.log("Hola mundo");
