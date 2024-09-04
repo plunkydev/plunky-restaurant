@@ -2,7 +2,6 @@ import platoComida from "./images/polloAsado.png"
 export default function createHome() {
     const div = document.createElement("div");
     div.innerHTML = `<div class="home">
-            <h1>Plunky's Restaurant</h1>
             <div class="hero">
                 <div class="bienvenida hero-item">
                     <h2>Bienvenidos a Plunky's Restaurant</h2>
