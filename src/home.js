@@ -1,4 +1,4 @@
-import platoComida from "./images/2000_660e7bf3461df.png"
+import platoComida from "./images/polloAsado.png"
 export default function createHome() {
     const div = document.createElement("div");
     div.innerHTML = `<div class="home">
