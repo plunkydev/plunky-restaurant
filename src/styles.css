@@ -1,3 +1,22 @@
+:root {
+    --global_main_color: #e56a48;
+}
+
+#botonMenuHero {
+    padding: 10px;
+    width: 10em;
+    border: none;
+    color: #fff;
+    background-color: var(--global_main_color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-bottom 0.2s;
+}
+#botonMenuHero:hover {
+    background-color: #ee7654;
+    box-shadow: 0 -2px 4px rgba(51, 50, 50, 0.2);
+}
+
 /* NAV SECTION */
 /* Estilos generales */
 body {
@@ -75,7 +94,7 @@ nav button {
 }
 
 nav button:hover {
-    border-bottom: 3px solid #555;
+    border-bottom: 3px solid var(--global_main_color);
     box-sizing: border-box;
 }
 
