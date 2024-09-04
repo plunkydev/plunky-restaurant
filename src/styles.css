@@ -1,3 +1,140 @@
+/* NAV SECTION */
+/* Estilos generales */
 body {
-    background-color: rebeccapurple;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del header */
+.header-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    /* Fondo oscuro */
+    color: #1d1d1d;
+    /* Texto en blanco */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    /* Asegura que el padding no cause desbordamiento */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra para darle un efecto de elevación */
+    height: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    /* Fondo oscuro */
+    color: #1d1d1d;
+    /* Texto en blanco */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    /* Asegura que el padding no cause desbordamiento */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra para darle un efecto de elevación */
+    height: 60px;
+
+}
+
+/* Estilos del logo */
+.logo p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilos del nav */
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* Permite que los botones se muevan a la siguiente línea si no caben */
+}
+
+/* Estilos de los botones del menú */
+nav button {
+    color: #303030;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: border-bottom 0.2s;
+    /* Transición suave del borde */
+}
+
+nav button:hover {
+    border-bottom: 3px solid #555;
+    box-sizing: border-box;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        /* Ajusta el padding para evitar el desbordamiento en pantallas pequeñas */
+    }
+
+    nav {
+        width: 100%;
+        gap: 10px;
+    }
+
+    nav button {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+
+/* HERO SECTION */
+.home {
+    text-align: center;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dividir en dos columnas de igual tamaño */
+    gap: 20px;
+    /* Espacio entre las columnas */
+    align-items: center;
+    /* Alinear verticalmente al centro */
+    background-color: #f4f4f4;
+    /* Color de fondo para resaltar las secciones */
+    margin-top: 20px;
+}
+
+.hero-item {
+    padding: 20px;
+}
+
+.bienvenida h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.bienvenida p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.bannerHero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
