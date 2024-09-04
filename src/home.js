@@ -1,4 +1,5 @@
 import platoComida from "./images/polloAsado.png";
+import hamburguesa from "./images/hamburguesa.png";
 import menu from "./menu.js";
 
 export default function createHome() {
@@ -8,11 +9,21 @@ export default function createHome() {
                 <div class="bienvenida hero-item">
                     <h2>Bienvenidos a Plunky's Restaurant</h2>
                     <p>Come hasta rebentar sin sentir remordimiento</p>
-                    <button id="botonMenuHero">Menu</button>
+                    <button id="botonMenuHero">Quieres?</button>
                 </div>
-                <div class="bannerHero hero-item">
+                    <div class="bannerHero hero-item">
                     <img src="${platoComida}" alt="plato de comida">
                 </div>
+            </div>
+                <div class="hero2">
+                    <div class="bannerHero hero-item">
+                        <img src="${hamburguesa}" alt="plato de comida">
+                    </div>
+                    <div class="bienvenida hero-item">
+                        <h2>Plunky's La Grosera</h2>
+                        <p>Con Esta si te LLenas</p>
+                        <button id="botonMenuHero">Cometela</button>
+                    </div>
             </div>
         </div>`;
     
