@@ -1,4 +1,6 @@
-import platoComida from "./images/polloAsado.png"
+import platoComida from "./images/polloAsado.png";
+import menu from "./menu.js";
+
 export default function createHome() {
     const div = document.createElement("div");
     div.innerHTML = `<div class="home">
@@ -13,6 +15,12 @@ export default function createHome() {
                 </div>
             </div>
         </div>`;
+    
+    const content = document.getElementById("content");
     content.innerHTML = "";
-    return content.appendChild(div);
+    content.appendChild(div);
+
+    // Añadir el evento al botón después de que se haya añadido al DOM
+    const botonMenuHero = document.getElementById("botonMenuHero");
+    botonMenuHero.addEventListener("click", menu);
 };
