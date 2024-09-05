@@ -5,7 +5,7 @@
     --box-shadow-light: rgba(0, 0, 0, 0.2);
     --padding-small: 10px;
     --padding-medium: 20px;
-    --font-family: Arial, sans-serif;
+    --font-family: "Signika Negative", sans-serif;
     --font-size-large: 1.5rem;
     --font-size-medium: 1rem;
 }
@@ -41,7 +41,6 @@ footer {
     background-color: #ffffff;
     color: var(--text-dark);
     width: 100%;
-    position: fixed;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -68,6 +67,7 @@ nav {
 nav button {
     color: #303030;
     border: none;
+    font-family: var(--font-family);
     padding: var(--padding-small) var(--padding-medium);
     cursor: pointer;
     font-size: var(--font-size-medium);
