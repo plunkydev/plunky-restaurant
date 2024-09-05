@@ -1,96 +1,78 @@
 :root {
     --global_main_color: #e56a48;
+    --text-dark: #1d1d1d;
+    --text-light: #fff;
+    --box-shadow-light: rgba(0, 0, 0, 0.2);
+    --padding-small: 10px;
+    --padding-medium: 20px;
+    --font-family: Arial, sans-serif;
+    --font-size-large: 1.5rem;
+    --font-size-medium: 1rem;
 }
 
-#botonMenuHero {
-    padding: 10px;
-    width: 10em;
-    border: none;
-    color: #fff;
-    background-color: var(--global_main_color);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: border-bottom 0.2s;
-}
-#botonMenuHero:hover {
-    background-color: #ee7654;
-    box-shadow: 0 -2px 4px rgba(51, 50, 50, 0.2);
-}
-
-/* NAV SECTION */
-/* Estilos generales */
+/* General body styling */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family);
 }
 
-/* Estilos del header */
+/* Header */
 .header-hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: var(--padding-small) var(--padding-medium);
     background-color: #ffffff;
-    /* Fondo oscuro */
-    color: #1d1d1d;
-    /* Texto en blanco */
+    color: var(--text-dark);
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     box-sizing: border-box;
-    /* Asegura que el padding no cause desbordamiento */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    /* Sombra para darle un efecto de elevación */
+    box-shadow: 0 2px 4px var(--box-shadow-light);
     height: 60px;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px 20px;
+    padding: var(--padding-small) var(--padding-medium);
     background-color: #ffffff;
-    /* Fondo oscuro */
-    color: #1d1d1d;
-    /* Texto en blanco */
+    color: var(--text-dark);
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 1000;
     box-sizing: border-box;
-    /* Asegura que el padding no cause desbordamiento */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
-    /* Sombra para darle un efecto de elevación */
+    box-shadow: 0 -2px 4px var(--box-shadow-light);
     height: 60px;
-
 }
 
-/* Estilos del logo */
+/* Logo styling */
 .logo p {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: var(--font-size-large);
     font-weight: bold;
 }
 
-/* Estilos del nav */
+/* Nav general styling */
 nav {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    /* Permite que los botones se muevan a la siguiente línea si no caben */
 }
 
-/* Estilos de los botones del menú */
+/* Nav button styling */
 nav button {
     color: #303030;
     border: none;
-    padding: 10px 15px;
+    padding: var(--padding-small) var(--padding-medium);
     cursor: pointer;
-    font-size: 1rem;
+    font-size: var(--font-size-medium);
     background-color: transparent;
     transition: border-bottom 0.2s;
-    /* Transición suave del borde */
 }
 
 nav button:hover {
@@ -98,50 +80,86 @@ nav button:hover {
     box-sizing: border-box;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
+/* Menu Button Hero */
+#botonMenuHero {
+    padding: var(--padding-small);
+    width: 10em;
+    border: none;
+    color: var(--text-light);
+    background-color: var(--global_main_color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
 
+#botonMenuHero:hover {
+    background-color: #ee7654;
+    box-shadow: 0 -2px 4px var(--box-shadow-light);
+}
+
+/* Nav icon styling */
+#navIcon, #navIconClose {
+    width: 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
     .logo p {
-        margin: 0;
-        font-size: 1rem;
-        font-weight: bold;
+        font-size: var(--font-size-medium);
     }
+
 
     .header-hero {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
-        padding: 10px;
-        /* Ajusta el padding para evitar el desbordamiento en pantallas pequeñas */
+        padding: var(--padding-small);
     }
 
+    #navIcon, #navIconClose {
+        width: 1.5rem;
+        display: block;
+    }
+    
+    .active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: var(--global_main_color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+    }
+
+
     nav {
-        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        display: none;
     }
 
     nav button {
         width: 100%;
         text-align: left;
+        color: var(--text-light);
     }
 }
 
-
-
-/* HERO SECTION */
+/* HERO Section */
 .home {
     text-align: center;
 }
 
-.hero, .hero2 {
+.hero,
+.hero2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Dividir en dos columnas de igual tamaño */
     gap: 20px;
-    /* Espacio entre las columnas */
     align-items: center;
-    /* Alinear verticalmente al centro */
     background-color: #f4f4f4;
-    /* Color de fondo para resaltar las secciones */
     margin-top: 20px;
 }
 
@@ -150,16 +168,16 @@ nav button:hover {
 }
 
 .hero-item {
-    padding: 20px;
+    padding: var(--padding-medium);
 }
 
 .bienvenida h2 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-large);
     margin-bottom: 10px;
 }
 
 .bienvenida p {
-    font-size: 1rem;
+    font-size: var(--font-size-medium);
     margin-bottom: 20px;
 }
 

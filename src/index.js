@@ -12,3 +12,10 @@ home();
 homeButton.addEventListener("click", home);
 menuButton.addEventListener("click", menu);
 usButton.addEventListener("click", aboutUs);
+function activeHamburger() {
+    const nav = document.getElementById("mainNav");
+    nav.classList.toggle("active"); // Alterna la clase "active"
+}
+document.getElementById("navIcon").addEventListener("click", activeHamburger);
+document.getElementById("navIconClose").addEventListener("click", activeHamburger);
+
