@@ -29,8 +29,6 @@ class Plato {
 
 // Función que inyecta platos en el menú
 export default function createMenu() {
-    const div = document.createElement("div");
-    div.innerHTML = `<h1>Menú de Platos</h1>`;
 
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-container');
@@ -49,9 +47,8 @@ export default function createMenu() {
         menuContainer.appendChild(platoElemento);
     });
 
-    div.appendChild(menuContainer);
 
     const content = document.getElementById('content');
     content.innerHTML = "";
-    return content.appendChild(div);
+    return content.appendChild(menuContainer);
 };
