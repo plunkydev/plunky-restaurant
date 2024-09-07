@@ -4,7 +4,8 @@ import menu from "./menu.js";
 
 export default function createHome() {
     const div = document.createElement("div");
-    div.innerHTML = `<div class="home">
+    div.classList.add("home");
+    div.innerHTML = `
             <div class="hero">
                 <div class="bienvenida hero-item">
                     <h2>Bienvenidos a Plunky's Restaurant</h2>
@@ -24,8 +25,7 @@ export default function createHome() {
                         <p>Con Esta si te LLenas</p>
                         <button id="botonMenuHero">Cometela</button>
                     </div>
-            </div>
-        </div>`;
+            </div>`;
     
     const content = document.getElementById("content");
     content.innerHTML = "";
