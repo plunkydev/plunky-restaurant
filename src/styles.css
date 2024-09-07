@@ -16,6 +16,16 @@ body {
     font-family: var(--font-family);
 }
 
+#content {
+    display: grid;
+    grid-template-columns: 1fr min(100ch, 100%) 1fr;
+    padding: 5px;
+}
+
+#content > * {
+    grid-column: 2;
+}
+
 /* Header */
 .header-hero {
     display: flex;
@@ -40,6 +50,7 @@ footer {
     padding: var(--padding-small) var(--padding-medium);
     background-color: #ffffff;
     color: var(--text-dark);
+    position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -151,6 +162,7 @@ nav button:hover {
 /* HERO Section */
 .home {
     text-align: center;
+    position: absolute;
 }
 
 .hero,
