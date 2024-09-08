@@ -1,4 +1,12 @@
 import "./menuStyle.css";
+import alitasPicantes from "./images/alitas de pollo picante con papas.webp";
+import arrozMarinado from "./images/arroz marinado.webp";
+import cerdoEmpanizado from "./images/cerdo empanisado horneado.webp";
+import churrascoRes from "./images/churrasco de res.webp";
+import croquetasPolloPapas from "./images/croquetas de pollo con papas.webp";
+import hamburguesaPapas from "./images/Hamburguesa con papas.webp";
+import macarronesQueso from "./images/macarrones con queso.webp";
+import polloAgridulce from "./images/pollo agridulce.webp";
 
 // Clase Plato que genera cada elemento del menú
 class Plato {
@@ -35,10 +43,14 @@ export default function createMenu() {
 
     // Definir los platos del menú
     const platos = [
-        new Plato('Plato 1', 'Descripción del plato 1, delicioso y con ingredientes frescos.', 120, 'https://via.placeholder.com/300'),
-        new Plato('Plato 2', 'Descripción del plato 2, una especialidad de la casa.', 150, 'https://via.placeholder.com/300'),
-        new Plato('Plato 3', 'Descripción del plato 3, para los amantes de lo picante.', 130, 'https://via.placeholder.com/300'),
-        new Plato('Plato 4', 'Descripción del plato 4, un clásico con un toque moderno.', 110, 'https://via.placeholder.com/300')
+        new Plato('Alitas picantes', 'Alitas de pollo picante con papas.', 120, `${alitasPicantes}`),
+        new Plato('Arroz marinado', 'Una especialidad de la casa.', 150, `${arrozMarinado}`),
+        new Plato('Cerdo Empanizado', 'Cerdo empanizado al horno con un rico contorno.', 130, `${cerdoEmpanizado}`),
+        new Plato('Churrasco de Res', 'Un corte especial de carne mas suave.', 170, `${churrascoRes}`),
+        new Plato('Croquetas de Pollo', 'Un clásico con un toque moderno.', 110, `${croquetasPolloPapas}`),
+        new Plato('Hamburguesa Vegana', 'Hamburguesa Vegana con papas y contorno especial.', 100, `${hamburguesaPapas}`),
+        new Plato('Macarrones con Queso', 'Macarrones con queso Gruyere, Esquisito Sabor.', 90, `${macarronesQueso}`),
+        new Plato('Pollo Agridulce', 'Un clásico con un toque Oriental.', 110, `${polloAgridulce}`),
     ];
 
     // Inyectar cada plato en el contenedor del menú
