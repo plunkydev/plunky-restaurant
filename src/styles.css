@@ -16,10 +16,25 @@ body {
     font-family: var(--font-family);
 }
 
+h2 {
+    position: relative;
+    margin: 20px 0;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 25%;
+    border-bottom: 5px solid var(--global_main_color); 
+}
+
 #content {
     display: grid;
     grid-template-columns: 1fr min(100ch, 100%) 1fr;
     padding: 5px;
+    margin-top: 42px;
 }
 
 #content > * {
@@ -165,6 +180,12 @@ nav button:hover {
     position: absolute;
 }
 
+.aboutUsText {
+    grid-column: 1 / 3;
+    padding: var(--padding-medium);
+    text-align: left;
+}
+
 .hero,
 .hero2 {
     display: grid;
@@ -172,7 +193,7 @@ nav button:hover {
     gap: 20px;
     align-items: center;
     background-color: #f4f4f4;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .hero2 {
@@ -183,15 +204,14 @@ nav button:hover {
     padding: var(--padding-medium);
 }
 
-.bienvenida h2 {
+.bienvenida h2, p {
     font-size: var(--font-size-large);
     margin-bottom: 10px;
 }
-
-.bienvenida p {
-    font-size: var(--font-size-medium);
-    margin-bottom: 20px;
+.aboutUs {
+    text-align: right;
 }
+
 
 .bannerHero img {
     width: 100%;
