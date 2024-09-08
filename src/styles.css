@@ -189,6 +189,10 @@ nav button:hover {
 /* Responsive Styles */
 @media (max-width: 768px) {
 
+    #botonMenuHero {
+        width: 7em;
+    }
+
     .aboutUsText {
         margin-bottom: 80px;
     }
@@ -201,6 +205,10 @@ nav button:hover {
     align-items: center;
     background-color: #f4f4f4;
     margin-top: 6px;
+}
+
+.hero2 {
+    background-color: #fff;
 }
 
     .bienvenida h2, p {
