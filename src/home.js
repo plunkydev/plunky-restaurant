@@ -23,7 +23,7 @@ export default function createHome() {
                     <div class="bienvenida hero-item">
                         <h2>Plunky's La Grosera</h2>
                         <p>Con Esta si te LLenas</p>
-                        <button id="botonMenuHero">Cometela</button>
+                        <button id="botonMenuHero2">Cometela</button>
                     </div>
             </div>`;
     
@@ -34,4 +34,6 @@ export default function createHome() {
     // Añadir el evento al botón después de que se haya añadido al DOM
     const botonMenuHero = document.getElementById("botonMenuHero");
     botonMenuHero.addEventListener("click", menu);
+    const botonMenuHero2 = document.getElementById("botonMenuHero2");
+    botonMenuHero2.addEventListener("click", menu);
 };
