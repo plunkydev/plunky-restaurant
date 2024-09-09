@@ -116,7 +116,7 @@ nav button:hover {
 }
 
 /* Menu Button Hero */
-#botonMenuHero {
+#botonMenuHero, #botonMenuHero2 {
     padding: var(--padding-small);
     width: 10em;
     border: none;
@@ -189,7 +189,7 @@ nav button:hover {
 /* Responsive Styles */
 @media (max-width: 768px) {
 
-    #botonMenuHero {
+    #botonMenuHero, #botonMenuHero2 {
         width: 7em;
     }
 
