@@ -1,5 +1,5 @@
-import platoComida from "./images/polloAsado.png";
-import hamburguesa from "./images/hamburguesa.png";
+import platoComida from "./images/polloAsado.webp";
+import hamburguesa from "./images/hamburguesa.webp";
 import menu from "./menu.js";
 
 export default function createHome() {
